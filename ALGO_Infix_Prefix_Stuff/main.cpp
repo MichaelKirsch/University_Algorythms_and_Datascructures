@@ -2,17 +2,9 @@
 #include <vector>
 #include <chrono>
 #include "../ALGO_stack/STack.h"
+#include <thread>
 
-//Example
-
-//Input:
-//2
-//a+b*(c^d-e)^(f+g*h)-i
-//A*(B+C)/D
-//
-//Output:
-//abcd^e-fgh*+^*+i-
-//ABC+*D/
+//Example:
 
 //1. Scan the infix expression from left to right.
 //2. If the scanned character is an operand, output it.
@@ -52,7 +44,6 @@ int get_precedance(char op_to_check)
     }
 }
 
-
 bool is_operand(char input)
 {
     const std::string not_operands ="+-*/^()";
@@ -62,13 +53,10 @@ bool is_operand(char input)
     return true;
 }
 
-
-
-int main() {
+void conv_inf_to_post(const std::string to_solve)
+{
+    std::cout << "Solving:" << to_solve<< std::endl << "Result:";
     Stack<char> myStack;
-    std::string to_solve;
-    std::cout << "Please insert your Equation in Infix-Notation:" << std::endl;
-    std::cin >> to_solve;
     for(auto& c:to_solve)
     {
         if(is_operand(c))
@@ -79,6 +67,7 @@ int main() {
             {
                 while (myStack.top()!='(')
                     std::cout <<myStack.pop();
+                myStack.pop(); //discard the paranthesis
             } else
             {
                 //its an operator
@@ -97,12 +86,20 @@ int main() {
                         } else
                             std::cout<<myStack.pop();
                 }
-
             }
         }
     }
     while (!myStack.empty())
         std::cout << myStack.pop();
     std::cout << std::endl;
+}
+
+int main() {
+    conv_inf_to_post("a+b*(c^d-e)^(f+g*h)-i");
+    conv_inf_to_post("A*(B+C)/D");
+    std::string custom_solve;
+    std::cout << "Please insert your Equation in Infix-Notation:" << std::endl;
+    std::cin >> custom_solve;
+    conv_inf_to_post(custom_solve);
     return 0;
 }
