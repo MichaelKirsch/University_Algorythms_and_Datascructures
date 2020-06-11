@@ -6,6 +6,7 @@
 
 void insertionSort(std::vector<int>& to_sort)
 {
+    int counter =0;
     std::cout << "Before:";
     for(auto& f:to_sort)
     {
@@ -28,9 +29,9 @@ void insertionSort(std::vector<int>& to_sort)
             std::cout<< f << ",";
         }
         std::cout<<std::endl;
-
+        counter++;
     }
-    std::cout << "After:";
+    std::cout << "After "<< counter << " sorts:";
 
     for(auto& f:to_sort)
     {
@@ -42,7 +43,5 @@ void insertionSort(std::vector<int>& to_sort)
 int main()
 {
     std::vector<int> example = {0, 10, 20, 1, 11, 21, 2,12, 22};
-
     insertionSort(example);
-
 }
