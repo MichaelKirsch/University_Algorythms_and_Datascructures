@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/micha/CLionProjects/University_Algorythms_and_Datascructures/ALGO-InsertionSort/src/main.cpp
+iostream
+-
+vector
+-
+

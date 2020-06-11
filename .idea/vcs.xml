@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ALGO-Fibonacci-stuff" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ALGO_EX7_recursive_vs_iterative" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ALGO_Ex1_Collatz" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ALGO_Ex2_towers_of_hanoi" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ALGO_binarySearch" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ALGO_stack" vcs="Git" />
+  </component>
+</project>

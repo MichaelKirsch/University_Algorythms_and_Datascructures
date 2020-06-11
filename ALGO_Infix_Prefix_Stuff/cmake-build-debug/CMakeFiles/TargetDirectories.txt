@@ -1,0 +1,3 @@
+C:/Users/micha/CLionProjects/University_Algorythms_and_Datascructures/ALGO_Infix_Prefix_Stuff/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/micha/CLionProjects/University_Algorythms_and_Datascructures/ALGO_Infix_Prefix_Stuff/cmake-build-debug/CMakeFiles/ALGO_infix_prefix.dir
+C:/Users/micha/CLionProjects/University_Algorythms_and_Datascructures/ALGO_Infix_Prefix_Stuff/cmake-build-debug/CMakeFiles/rebuild_cache.dir

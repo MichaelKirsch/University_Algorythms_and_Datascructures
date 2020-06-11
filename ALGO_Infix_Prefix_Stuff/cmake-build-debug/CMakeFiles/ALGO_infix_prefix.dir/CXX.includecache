@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/micha/CLionProjects/University_Algorythms_and_Datascructures/ALGO_Infix_Prefix_Stuff/main.cpp
+iostream
+-
+vector
+-
+chrono
+-
+../ALGO_stack/STack.h
+C:/Users/micha/CLionProjects/University_Algorythms_and_Datascructures/ALGO_stack/STack.h
+thread
+-
+
+C:/Users/micha/CLionProjects/University_Algorythms_and_Datascructures/ALGO_stack/STack.h
+
